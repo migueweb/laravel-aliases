@@ -6,7 +6,7 @@ Terminal tool to enhance laravel artisan experience and productivity.
 - PHP
 ### Installation 
 ```bash
-cd ~ && git clone https://github.com/migueweb/laravel-aliases && mv laravel-aliases .laravel-aliases && cd ./.laravel-aliases && chmod +x install.sh && ./install.sh
+cd ~ && git clone https://github.com/migueweb/laravel-aliases && mv laravel-aliases .laravel-aliases && cd ./.laravel-aliases && chmod +x install.sh && ./install.sh && cd ~
 ```
 
 ## Usage
