@@ -5,8 +5,8 @@
 # Terminal tool to enhance artisan experience and productivity
 
 # laravel-aliases help
-alias lases="cat ~/.laravel-aliases/help"
-alias laravel-aliases="cat ~/.laravel-aliases/help"
+alias lases="cat ~/.laravel-aliases/help";
+alias laravel-aliases="cat ~/.laravel-aliases/help";
 
 # php artisan abreviature
 alias art="php artisan";
