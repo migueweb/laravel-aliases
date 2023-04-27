@@ -1,0 +1,162 @@
+ _                       _         _ _                 
+| |__ _ _ _ __ ___ _____| |   __ _| (_)__ _ ___ ___ ___
+| / _` | '_/ _` \ V / -_) |  / _` | | / _` (_-</ -_|_-<
+|_\__,_|_| \__,_|\_/\___|_|  \__,_|_|_\__,_/__/\___/__/
+
+Laravel aliases
+
+Usage:
+  command [options] [arguments]
+
+Options:
+  -h, --help            Display help for the given command. When no command is given display help for the list command
+  -q, --quiet           Do not output any message
+  -V, --version         Display this application version
+      --ansi|--no-ansi  Force (or disable --no-ansi) ANSI output
+  -n, --no-interaction  Do not ask any interactive question
+      --env[=ENV]       The environment the command should run under
+  -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Available commands:
+  about                                 Display basic information about your application
+  clear-compiled                        Remove the compiled class file
+  completion                            Dump the shell completion script
+  db                                    Start a new database CLI session
+  docs                                  Access the Laravel documentation
+  down                                  Put the application into maintenance / demo mode
+  env                                   Display the current framework environment
+  help                                  Display help for a command
+  inspire                               Display an inspiring quote
+  list                                  List commands
+  migrate                               Run the database migrations
+  optimize                              Cache the framework bootstrap files
+  serve                                 Serve the application on the PHP development server
+  test                                  Run the application tests
+  tinker                                Interact with your application
+  up                                    Bring the application out of maintenance mode
+ auth
+  au:cle                                Flush expired password reset tokens
+ cache
+  ca:cle                                Flush the application cache
+  ca:for                                Remove an item from the cache
+  ca:pru                                Prune stale cache tags from the cache (Redis only)
+  ca:tab                                Create a migration for the cache database table
+ config
+  co:cac                                Create a cache file for faster configuration loading
+  co:cle                                Remove the configuration cache file
+ db
+  db:mon                                Monitor the number of connections on the specified database
+  db:see                                Seed the database with records
+  db:sho                                Display information about the given database
+  db:tab                                Display information about the given database table
+  db:wip                                Drop all tables, views, and types
+ env
+  en:dec                                Decrypt an environment file
+  en:enc                                Encrypt an environment file
+ event
+  ev:cac                                Discover and cache the application's events and listeners
+  ev:cle                                Clear all cached events and listeners
+  ev:gen                                Generate the missing events and listeners based on registration
+  ev:lis                                List the application's events and listeners
+ jetstream
+  je:ins                                Install the Jetstream components and resources
+ key
+  ke:gen                                Set the application key
+ lang
+  la:pub                                Publish all language files that are available for customization
+ livewire
+  li:co                                 Configure temporary file upload s3 directory to automatically cleanup files older than 24hrs
+  li:co                                 Copy a Livewire component
+  li:de                                 Delete a Livewire component
+  li:di                                 Regenerate Livewire component auto-discovery manifest
+  li:ma                                 Create a new Livewire component
+  li:mo                                 Move a Livewire component
+  li:pu                                 Publish Livewire configuration
+  li:st                                 Publish Livewire stubs
+ make
+  m:cas                                 Create a new custom Eloquent cast class
+  m:cha                                 Create a new channel class
+  m:comm                                Create a new Artisan command
+  m:com                                 Create a new view component class
+  m:con                                 Create a new controller class
+  m:eve                                 Create a new event class
+  m:exc                                 Create a new custom exception class
+  m:fac                                 Create a new model factory
+  m:job                                 Create a new job class
+  m:lis                                 Create a new event listener class
+  m:liv                                 Create a new Livewire component
+  m:mai                                 Create a new email class
+  m:mid                                 Create a new middleware class
+  m:mig                                 Create a new migration file
+  m:mod                                 Create a new Eloquent model class
+  m:not                                 Create a new notification class
+  m:obs                                 Create a new observer class
+  m:pol                                 Create a new policy class
+  m:pro                                 Create a new service provider class
+  m:req                                 Create a new form request class
+  m:res                                 Create a new resource
+  m:rul                                 Create a new validation rule
+  m:sco                                 Create a new scope class
+  m:see                                 Create a new seeder class
+  m:tes                                 Create a new test class
+ migrate
+  mi:fre                                Drop all tables and re-run all migrations
+  mi:ins                                Create the migration repository
+  mi:ref                                Reset and re-run all migrations
+  mi:res                                Rollback all database migrations
+  mi:rol                                Rollback the last database migration
+  mi:sta                                Show the status of each migration
+ model
+  mo:pru                                Prune models that are no longer needed
+  mo:sho                                Show information about an Eloquent model
+ notifications
+  no:tab                                Create a migration for the notifications table
+ optimize
+  op:cle                                Remove the cached bootstrap files
+ package
+  pa:dis                                Rebuild the cached package manifest
+ queue
+  q:bat                                 Create a migration for the batches database table
+  q:cle                                 Delete all of the jobs from the specified queue
+  q:fai                                 List all of the failed queue jobs
+  q:fait                                Create a migration for the failed queue jobs database table
+  q:flu                                 Flush all of the failed queue jobs
+  q:for                                 Delete a failed queue job
+  q:lis                                 Listen to a given queue
+  q:mon                                 Monitor the size of the specified queues
+  q:prub                                Prune stale entries from the batches database
+  q:pruf                                Prune stale entries from the failed jobs table
+  q:res                                 Restart queue worker daemons after their current job
+  q:ret                                 Retry a failed queue job
+  q:retb                                Retry the failed jobs for a batch
+  q:tab                                 Create a migration for the queue jobs database table
+  q:wor                                 Start processing jobs on the queue as a daemon
+ route
+  r:cac                                 Create a route cache file for faster route registration
+  r:cle                                 Remove the route cache file
+  r:lis                                 List all registered routes
+ sail
+  sa:add                                Add a service to an existing Sail installation
+  sa:ins                                Install Laravel Sail's default Docker Compose file
+  sa:pub                                Publish the Laravel Sail Docker files
+ sanctum
+  san:pru                               Prune tokens expired for more than specified number of hours
+ schedule
+  sch:cle                               Delete the cached mutex files created by scheduler
+  sch:lis                               List all scheduled tasks
+  sch:run                               Ruthe scheduled commands
+  sch:tes                               Run a scheduled command
+  sch:wor                               Start the schedule worker
+ schema
+  sch:dum                               Dump the given database schema
+ session
+  se:tab                                Create a migration for the session database table
+ storage
+  st:lin                                Create the symbolic links configured for the application
+ stub
+  st:pub                                Publish all stubs that are available for customization
+ vendor
+  ve:pub                                Publish any publishable assets from vendor packages
+ view
+  vi:cac                                Compile all of the application's Blade templates
+  vi:cle                                Clear all compiled view files

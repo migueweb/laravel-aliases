@@ -1,0 +1,639 @@
+# License: The MIT License (MIT)
+# Author migueweb https://github.com/migueweb/
+
+# Laravel aliases
+# Terminal tool to enhance artisan experience and productivity
+
+# laravel-aliases help
+alias lases="cat ~/.laravel-aliases/help"
+alias laravel-aliases="cat ~/.laravel-aliases/help"
+
+# php artisan abreviature
+alias art="php artisan";
+
+##########################################
+# Start auth functions
+##########################################
+
+function au:cle()
+{
+    php artisan auth:clear-resets $1 $2;
+};
+
+##########################################
+# Start cache functions
+##########################################
+
+function ca:cle()
+{
+    php artisan cache:clear $1 $2;
+};
+
+function ca:for()
+{
+    php artisan cache:forget $1 $2;
+};
+
+function ca:pru()
+{
+    php artisan cache:prune-stale-tags $1 $2;
+};
+
+function ca:tab()
+{
+    php artisan cache:table $1 $2;
+};
+
+##########################################
+# Start config functions
+##########################################
+
+function co:cac()
+{
+    php artisan config:cache $2;
+};
+
+function co:cle()
+{
+    php artisan config:clear $2;
+};
+
+##########################################
+# Start db functions
+##########################################
+
+function db:mon(){
+    php artisan db:monitor $1 $2;
+};
+
+function db:see(){
+    php artisan db:seed $1 $2;
+};
+
+function db:sho(){
+    php artisan db:show $1 $2;
+};
+
+function db:tab(){
+    php artisan db:table $1 $2;
+};
+
+function db:wip(){
+    php artisan db:wipe $1 $2;
+};
+
+##########################################
+# Start env functions
+##########################################
+
+function en:dec()
+{
+    php artisan env:decrypt $1 $2;
+};
+
+function en:enc()
+{
+    php artisan env:encrypt $1 $2;
+};
+
+##########################################
+# Start event functions
+##########################################
+
+function ev:cac()
+{
+    php artisan event:cache $1 $2;
+};
+
+function ev:cle()
+{
+    php artisan event:clear $1 $2;
+};
+
+function ev:gen()
+{
+    php artisan event:generate $1 $2;
+};
+
+function ev:lis()
+{
+    php artisan event:list $1 $2;
+};
+
+##########################################
+# Start jetstream functions
+##########################################
+
+function je:ins() {
+    php artisan jetstream:install $1 $2;
+};
+
+##########################################
+# Start key functions
+##########################################
+
+function ke:gen()
+{
+    php artisan key:generate $1 $2;
+};
+
+alias key="php artisan key:generate";
+
+##########################################
+# Start lang functions
+##########################################
+
+function la:pub()
+{
+    php artisan lang:publish $1 $2;
+};
+
+##########################################
+# Start livewire functions
+##########################################
+
+function l:con()
+{
+    php artisan livewire:configure-s3-upload-cleanup $1 $2 $3;
+};
+
+function l:cop()
+{
+    php artisan livewire:copy $1 $2 $3;
+};
+
+function l:del()
+{
+    php artisan livewire:delete $1 $2 $3;
+};
+
+function l:dis()
+{
+    php artisan livewire:discover $1 $2 $3;
+};
+
+function l:mak()
+{
+    php artisan livewire:make $1 $2 $3;
+};
+
+function l:mov()
+{
+    php artisan livewire:move $1 $2 $3;
+};
+
+function l:pub()
+{
+    php artisan livewire:publish $1 $2 $3;
+};
+
+function l:stu()
+{
+    php artisan livewire:stubs  $1 $2 $3;
+};
+
+##########################################
+# Start make functions
+##########################################
+
+function m:cas()
+{
+    php artisan make:cast $1 $2;
+};
+
+function m:cha()
+{
+    php artisan make:channel $1 $2;
+};
+
+function m:comm()
+{
+    php artisan make :command $1 $2;
+};
+
+function m:com()
+{
+    php artisan make:component $1 $2;
+};
+
+function m:con()
+{
+    php artisan make:controller $1 $2;
+};
+
+function mc()
+{
+    php artisan make:controller $1Controller $2;
+};
+
+function mcr(){
+    php artisan make:controller $1Controller --resource;
+};
+
+function m:eve()
+{
+    php artisan make:event $1 $2;
+};
+
+function m:exc()
+{
+    php artisan make:exception $1 $2;
+};
+
+function m:fac() 
+{
+    php artisan make:factory $1 $2;
+};
+
+function mf() 
+{
+    php artisan make:factory $1Factory $2;
+};
+
+function m:job()
+{
+    php artisan make:job $1 $2;
+};
+
+function m:lis()
+{
+    php artisan make:listener $1 $2;
+};
+
+function m:mai()
+{
+    php artisan make:mail $1 $2;
+};
+
+function m:mid()
+{
+    php artisan make:middleware $1 $2;
+};
+
+function m:mig()
+{
+    php artisan make:migration $1 $2;
+};
+
+function mmg()
+{
+    php artisan make:migration create_$1_table $2;
+};
+
+function m:mod()
+{
+    php artisan make:model $1 $2;
+};
+
+function m:not()
+{
+    php artisan make:notification $1 $2;
+};
+
+function m:obs()
+{
+    php artisan make:observer $1 $2;
+};
+
+function m:pol()
+{
+    php artisan make:policy $1 $2;
+};
+
+function m:pro()
+{
+    php artisan make:provider $1 $2;
+};
+
+function m:req()
+{
+    php artisan make:request $1 $2;
+};
+
+function mrq()
+{
+    php artisan make:request $1Request $2;
+};
+
+function m:res()
+{
+    php artisan make:resource $1 $2;
+};
+
+function m:rul()
+{
+    php artisan make:rule $1 $2;
+};
+
+function m:sco()
+{
+    php artisan make:scope $1 $2;
+};
+
+function m:see()
+{
+    php artisan make:seeder $1 $2;
+};
+
+function ms()
+{
+    php artisan make:seeder $1Seeder $2;
+};
+
+function m:tes()
+{
+    php artisan make:test $1 $2;
+};
+
+##########################################
+# Start migrate functions
+##########################################
+
+function mi:fre()
+{
+    php artisan migrate:fresh $1 $2;
+};
+
+function mi:ins()
+{
+    php artisan migrate:install $1 $2;
+};
+
+function mi:ref()
+{
+    php artisan migrate:refresh $1 $2;
+};
+
+function mi:res()
+{
+    php artisan migrate:reset $1 $2;
+};
+
+function mi:rol()
+{
+ php artisan migrate:rollback $1 $2;
+};
+
+function mi:sta()
+{
+    php artisan migrate:status $1 $2;
+};
+
+alias mfs="php artisan migrate:fresh --seed";
+
+##########################################
+# Start migrate functions
+##########################################
+
+function mo:pru()
+{
+    php artisan model:prune $1 $2;
+};
+
+function mo:sho()
+{
+    php artisan model:show $1 $2;
+};
+
+##########################################
+# Start notifications functions
+##########################################
+
+function no:tab()
+{
+    php artisan notifications:table $1 $2;
+};
+
+##########################################
+# Start optimize functions
+##########################################
+
+function op:cle()
+{
+    php artisan optimize:clear $1 $2;
+};
+
+##########################################
+# Start package functions
+##########################################
+
+function pa:dis()
+{
+    php artisan package:discover $1 $2;
+};
+
+##########################################
+# Start queue functions
+##########################################
+
+function q:bat()
+{
+    php artisan queue:batches-table $1 $2;
+};
+
+function q:cle()
+{
+    php artisan queue:clear $1 $2;
+};
+
+function q:fai()
+{
+    php artisan queue:failed $1 $2;
+};
+
+function q:fait()
+{
+    php artisan queue:failed-table $1 $2;
+};
+
+function q:flu()
+{
+    php artisan queue:flush $1 $2;
+};
+
+function q:for()
+{
+    php artisan queue:forget $1 $2;
+};
+
+function q:lis()
+{
+    php artisan queue:listen $1 $2;
+};
+
+function q:mon()
+{
+    php artisan queue:monitor $1 $2;
+};
+
+function q:prub()
+{
+    php artisan queue:prune-batches $1 $2;
+};
+
+function q:pruf()
+{
+    php artisan queue:prune-failed $1 $2;
+};
+
+function q:res()
+{
+    php artisan queue:restart $1 $2;
+};
+
+function q:ret()
+{
+    php artisan queue:retry $1 $2;
+};
+
+function q:retb()
+{
+    php artisan queue:retry-batch $1 $2;
+};
+
+function q:tab()
+{
+    php artisan queue:table $1 $2;
+};
+
+function q:wor()
+{
+    php artisan queue:work $1 $2;
+};
+
+##########################################
+# Start route functions
+##########################################
+
+function r:cac()
+{
+    php artisan route:cache $1 $2;
+};
+
+function r:cle()
+{
+    php artisan route:clear $1 $2;
+};
+
+function r:lis()
+{
+    php artisan route:list $1 $2;
+};
+
+alias rl="php artisan route:list";
+
+##########################################
+# Start sail functions
+##########################################
+
+function sa:add()
+{
+    php artisan sail:add $1 $2;
+};
+
+function sa:ins()
+{
+    php artisan sail:install $1 $2;
+};
+
+function sa:pub()
+{
+    php artisan sail:publish $1 $2;
+};
+
+##########################################
+# Start sanctum functions
+##########################################
+
+function san:pru()
+{
+    php artisan sanctum:prune-expired $1 $2;
+};
+
+##########################################
+# Start schedule functions
+##########################################
+
+function sch:cle()
+{
+    php artisan schedule:clear-cache $1 $2;
+};
+
+function sch:lis()
+{
+    php artisan schedule:list $1 $2;
+};
+
+function sch:run()
+{
+    php artisan schedule:run $1 $2;
+};
+
+function sch:tes()
+{
+    php artisan schedule:test $1 $2;
+};
+
+function sch:wor()
+{
+    php artisan schedule:work $1 $2;
+};
+
+##########################################
+# Start schema functions
+##########################################
+
+function sch:dum()
+{
+    php artisan schema:dump $1 $2;
+};
+
+##########################################
+# Start session functions
+##########################################
+
+function se:tab()
+{
+    php artisan session:table $1 $2;
+};
+
+##########################################
+# Start storage functions
+##########################################
+
+function st:lin()
+{
+    php artisan storage:link $1 $2;
+};
+
+##########################################
+# Start stub functions
+##########################################
+
+function st:pub()
+{
+    php artisan stub:publish $1 $2;
+};
+
+##########################################
+# Start vendor functions
+##########################################
+
+function ve:pub()
+{
+    php artisan vendor:publish $1 $2;
+};
+
+##########################################
+# Start view functions
+##########################################
+
+function vi:cac()
+{
+    php artisan view:cache $1 $2;
+};
+
+function vi:cle()
+{
+    php artisan view:clear $1 $2;
+};
