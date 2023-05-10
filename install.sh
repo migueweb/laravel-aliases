@@ -4,16 +4,6 @@ initial_path=$(pwd)
 
 REPO="https://github.com/migueweb/laravel-aliases"
 
-function print_error() {
-  echo -e "\033[31mError:\033[0m $1"
-}
-
-function print_installation_success() {
-  echo ''
-  echo -e "laravel-aliases was added to ~/.${1}rc"
-  echo -e "\033[32mStart it on Github ⭐️:\033[0m ${REPO}"
-}
-
 # Installation process
 cd ${HOME}
 
@@ -35,18 +25,22 @@ cd ./.laravel-aliases
 # Check if zsh or bash
 if [ "$(echo $SHELL)" = "/bin/zsh" ]; then
 
-  php minifier >>${HOME}/.zshrc
-  print_installation_success "zsh"
+  php minifier >> ${HOME}/.zshrc
+    echo ''
+  echo -e "laravel-aliases was added to ~/.zshrc"
+  echo -e "\033[32mStart it on Github ⭐️:\033[0m ${REPO}"
   zsh
 
 elif [ "$(echo $SHELL)" = "/bin/bash" ]; then
 
-  php minifier >>${HOME}/.bashrc
-  print_installation_success "bash"
+  php minifier >> ${HOME}/.bashrc
+  echo ''
+  echo -e "laravel-aliases was added to ~/.bashrc"
+  echo -e "\033[32mStart it on Github ⭐️:\033[0m ${REPO}"
   bash
 
 else
-  print_error "Bash or Zsh required or check ${REPO}"
+  echo -e "\033[31mError:\033[0m Bash or Zsh required or check ${REPO}"
 fi
 
 cd $(echo $initial_path)
